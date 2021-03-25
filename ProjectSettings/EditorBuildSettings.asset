@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/00_Splash.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/01_Login.unity
+    guid: cda9fe30078ad094fb9cd1f8618bfce4
+  - enabled: 1
+    path: Assets/Scenes/02_Password.unity
+    guid: 839ed2229eba534458590d5ed69b1d5e
+  - enabled: 1
+    path: Assets/Scenes/03_Home.unity
+    guid: 9b6b1706bb5950b428d336516d2e574a
+  - enabled: 1
+    path: Assets/Scenes/04_Tickets.unity
+    guid: 77ae93738b1644e41a2dc7076a9fb8ad
+  - enabled: 1
+    path: Assets/Scenes/05_Challenges.unity
+    guid: cf250bd51741a31438b9e1ab5bfab3be
+  - enabled: 1
+    path: Assets/Scenes/06_Prizes.unity
+    guid: b48fb2846e26d484f932b14cf251da52
+  - enabled: 1
+    path: Assets/Scenes/07_Checkers_Load.unity
+    guid: 9f7b5d4156739374ab5367423543ea28
+  - enabled: 1
+    path: Assets/Scenes/08_Checkers_Game.unity
+    guid: 8bc0b29b80949c14ba6fe3a445a20ef0
+  - enabled: 1
+    path: Assets/Scenes/09_Snake_Load.unity
+    guid: 676590a90eebd32428d6a8166f210129
+  - enabled: 0
+    path: 
+    guid: 97b5ee7e554814b439d92d18f404f909
+  - enabled: 0
+    path: 
+    guid: 4cd3d2a8acf90594295af4fa7244902a
+  - enabled: 0
+    path: 
+    guid: 6579757c391541842b167b41e40698f7
+  - enabled: 1
+    path: Assets/Scenes/10_Snake_Menu.unity
+    guid: 3ef1fb612ba3f5d4693425e07f31e44d
+  - enabled: 1
+    path: Assets/Scenes/11_Snake_Game.unity
+    guid: bc2132e7a0afada4c9c07b4053e300d8
+  - enabled: 1
+    path: Assets/Scenes/12_Snake_Records.unity
+    guid: 0944e20baabc4d04fab55d9ebbd04f7b
+  - enabled: 1
+    path: Assets/Scenes/13_Quiz_Load.unity
+    guid: c2bba92ee66c0754b82d69db50772621
+  - enabled: 1
+    path: Assets/Scenes/14_Quiz_Game.unity
+    guid: 7b98b13cf1df9464bbee213523145930
+  - enabled: 1
+    path: Assets/Scenes/15_Quiz_Records.unity
+    guid: 799465e77ae7e6647947c983436b595b
+  - enabled: 1
+    path: Assets/Scenes/16_Checkers_Records.unity
+    guid: 950676e37cab5b04f89d254729e8e6cb
+  m_configObjects: {}
