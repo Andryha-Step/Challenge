@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/08_Checkers_Game.unity
+- path: Assets/Scenes/04_Tickets.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

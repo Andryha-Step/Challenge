@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f716ca453fa146499a8f8c26990458e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionColor: {r: 1, g: 1, b: 1, a: 0.78431374}
+  selectionColor: {r: 1, g: 1, b: 1, a: 0}
   possibiliteColor: {r: 1, g: 1, b: 1, a: 0.78431374}
   blackTileColor: {r: 1, g: 1, b: 1, a: 0}
   allTiles:
@@ -4511,7 +4511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &709666251
 RectTransform:
   m_ObjectHideFlags: 0

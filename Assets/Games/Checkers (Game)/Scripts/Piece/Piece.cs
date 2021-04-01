@@ -29,7 +29,7 @@ abstract public class Piece : MonoBehaviour {
     public void Capture()
     {
         hasBeenCaptured = true;
-        this.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.7f);
+        this.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
     }
 
 

@@ -233,7 +233,7 @@ public class Board : MonoBehaviour {
             foreach (Movement e in possibleMoves)
             {
                 GetTile(e.getDestinyPosition())
-                    .GetComponent<Image>().color = new Color(0.3113f, 0.3113f, 0.3113f);
+                    .GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
             }
         }
     }
