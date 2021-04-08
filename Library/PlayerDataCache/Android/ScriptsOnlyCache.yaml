@@ -46,8 +46,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -654,7 +652,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5046}
     - Class: 114
-      Script: {instanceID: 18036}
+      Script: {instanceID: 26456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1380,7 +1378,7 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
-      Hash: 445c58c7241bd0a6ed24e657002a818d
+      Hash: 333ce0dcc6b064ec262ecb9e958d9346
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChooseGamePanels

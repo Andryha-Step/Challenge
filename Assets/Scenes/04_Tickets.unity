@@ -388,7 +388,7 @@ RectTransform:
   m_GameObject: {fileID: 73504639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 1379070417}
   m_Father: {fileID: 1811280351}
@@ -3976,6 +3976,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChallengesOpen
       objectReference: {fileID: 0}
+    - target: {fileID: 4571115751883419896, guid: ab4599db528f29d4c9d3cbb99bb2096d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba437e997066dff41ab48dbcf4c3d6bf, type: 3}
     - target: {fileID: 4571115751883419897, guid: ab4599db528f29d4c9d3cbb99bb2096d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4079,6 +4083,10 @@ PrefabInstance:
     - target: {fileID: 4571115751883419898, guid: ab4599db528f29d4c9d3cbb99bb2096d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571115752152894315, guid: ab4599db528f29d4c9d3cbb99bb2096d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4571115752759974826, guid: ab4599db528f29d4c9d3cbb99bb2096d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6622,7 +6630,7 @@ RectTransform:
   m_GameObject: {fileID: 1401673184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 731884623}
   m_Father: {fileID: 142311466}
@@ -7899,7 +7907,7 @@ RectTransform:
   m_GameObject: {fileID: 1636641904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 1093189981}
   m_Father: {fileID: 409313686}

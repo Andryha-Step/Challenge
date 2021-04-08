@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChooseGamePanels : MonoBehaviour
 {
     public GameObject InfoPanel;
+    public GameObject InfoBttn;
 
     public void Update()
     {
@@ -18,10 +19,12 @@ public class ChooseGamePanels : MonoBehaviour
     public void OpenInfoPanel()
     {
         InfoPanel.SetActive(true);
+        InfoBttn.SetActive(false);
     }
 
     public void CloseInfoPanel()
     {
         InfoPanel.SetActive(false);
+        InfoBttn.SetActive(true);
     }
 }
