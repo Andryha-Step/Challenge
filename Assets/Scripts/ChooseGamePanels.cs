@@ -13,6 +13,7 @@ public class ChooseGamePanels : MonoBehaviour
         if (GameObject.Find("Dropdown List") != null)
         {
             InfoPanel.SetActive(false);
+            InfoBttn.SetActive(true);
         }
     }
 

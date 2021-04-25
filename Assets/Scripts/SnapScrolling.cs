@@ -15,18 +15,21 @@ public class SnapScrolling : MonoBehaviour
     [Header("Other Objects")]
     public GameObject panPrefab;
 
-    private GameObject[] instPans;
-    private Vector2[] panPos;
-    private Vector2[] panScale;
+    public GameObject[] instPans;
+    public Vector2[] panPos;
+    public Vector2[] panScale;
 
-    private RectTransform contentRect;
-    private Vector2 contentVector;
+    public RectTransform contentRect;
+    public Vector2 contentVector;
 
-    private int selectedPanID;
-    private bool isScrolling;
+    public int selectedPanID;
+    public bool isScrolling;
+
+    public bool start;
 
     public void Start()
     {
+        start = true;
         contentRect = GetComponent<RectTransform>();
         instPans = new GameObject[panCount];
         panPos = new Vector2[panCount];
@@ -38,10 +41,26 @@ public class SnapScrolling : MonoBehaviour
             instPans[i].transform.localPosition = new Vector2(instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x + panOffset, instPans[i].transform.localPosition.y);
             panPos[i] = -instPans[i].transform.localPosition;
         }
+
     }
 
     private void FixedUpdate()
     {
+        if(start == true)
+        {
+            if(PlayerPrefs.GetInt("PanID") == 1)
+            {
+                contentVector.x = -495;
+                contentRect.anchoredPosition = contentVector;
+            }
+            else if (PlayerPrefs.GetInt("PanID") == 2)
+            {
+                contentVector.x = -990;
+                contentRect.anchoredPosition = contentVector;
+            }
+            start = false;
+        }
+
         float nearestPos = float.MaxValue;
         for (int i = 0; i < panCount; i++)
         {
@@ -50,6 +69,7 @@ public class SnapScrolling : MonoBehaviour
             {
                 nearestPos = distance;
                 selectedPanID = i;
+                PlayerPrefs.SetInt("PanID", selectedPanID);
             }
         }
         if (isScrolling) return;
