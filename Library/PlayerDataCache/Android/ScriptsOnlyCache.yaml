@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - Quiz
     - Quiz_records
     - Records
+    - Scrolls
     - Sertificate_choose
     - Snake
     - Snake_buttons
@@ -36,6 +37,7 @@ ScriptsOnlyBuild:
     - StartGame
     - TileHandler
     - Toggle_controll
+    - TournamentTime
     - UserControl
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -57,10 +59,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -282,6 +282,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4292}
     - Class: 114
       Script: {instanceID: 4832}
+    - Class: 114
+      Script: {instanceID: 156266}
+    - Class: 114
+      Script: {instanceID: 211668}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -446,6 +450,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4020}
     - Class: 114
       Script: {instanceID: 4832}
+    - Class: 114
+      Script: {instanceID: 156266}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -527,6 +533,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4832}
     - Class: 114
       Script: {instanceID: 5148}
+    - Class: 114
+      Script: {instanceID: 156266}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -656,7 +664,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5046}
     - Class: 114
-      Script: {instanceID: 17300}
+      Script: {instanceID: 43798}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1838,7 +1846,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: d0ba848bf40274f3ea0a6fdfbdc0eacc
+      Hash: 9e699a1ee98133d31ad19bd43d58ff4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SnapScrolling
@@ -1956,6 +1964,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sertificate_choose
+  - hash:
+      serializedVersion: 2
+      Hash: 3212b222f97647ed4845a42c24656eee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scrolls
+  - hash:
+      serializedVersion: 2
+      Hash: a865e2569f64f2add2b442b042725cf0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TournamentTime
   platform: 13
   scenePathNames:
   - Assets/Scenes/00_Splash.unity

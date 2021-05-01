@@ -64,6 +64,7 @@
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\Player\AbstractPlayer.cs" />
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\Board.cs" />
     <Compile Include="Assets\Games\Quiz (Game)\Scripts\Quiz.cs" />
+    <Compile Include="Assets\Scripts\Email_panel.cs" />
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\Piece\Piece.cs" />
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PanelButtons.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\IntVector2.cs" />
     <Compile Include="Assets\Scripts\Password.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\BaseInputHelper.cs" />
+    <Compile Include="Assets\Scripts\Home_Dropdown.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\SimpleButton.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\Records.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\Touchpad.cs" />
@@ -114,8 +116,8 @@
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\PanelController.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\JoystickInputHelper.cs" />
     <Compile Include="Assets\Scripts\Sertificate_choose.cs" />
-    <Compile Include="Assets\Scripts\Email_panel.cs" />
-    <Compile Include="Assets\Scripts\Home_Dropdown.cs" />
+    <Compile Include="Assets\Scripts\Scrolls.cs" />
+    <Compile Include="Assets\Scripts\TournamentTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

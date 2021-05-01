@@ -22,10 +22,14 @@ public class SnapScrolling : MonoBehaviour
     public RectTransform contentRect;
     public Vector2 contentVector;
 
+    public GameObject tournamentTime;
+
     public int selectedPanID;
     public bool isScrolling;
 
     public bool start;
+
+    
 
     public void Start()
     {
@@ -46,7 +50,17 @@ public class SnapScrolling : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(start == true)
+        if (selectedPanID == 0)
+        {
+            tournamentTime.SetActive(true);
+        }
+        else
+        {
+            tournamentTime.SetActive(false);
+        }
+        
+
+        if (start == true)
         {
             if(PlayerPrefs.GetInt("PanID") == 1)
             {
