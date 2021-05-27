@@ -17,10 +17,19 @@ public class Quiz_records : MonoBehaviour
     void Start()
     {
         max_rec = PlayerPrefs.GetInt("QuizMaxRecord");
-        max_rec_t.text = max_rec.ToString() + "/20";
         time.text = PlayerPrefs.GetString("QuizTime");
         record = PlayerPrefs.GetInt("QuizRecord");
-        rec.text = record.ToString() + "/20";
+
+        if (PlayerPrefs.GetInt("QuizGameType") == 2)
+        {
+            max_rec_t.text = max_rec.ToString() + "/10";
+            rec.text = record.ToString() + "/10";
+        }
+        else
+        {
+            max_rec_t.text = max_rec.ToString() + "/6";
+            rec.text = record.ToString() + "/6";
+        }
             restart.SetActive(true);
     }
 

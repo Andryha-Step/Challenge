@@ -32,7 +32,7 @@ public class Quiz : MonoBehaviour
     public Text full_time_t;
     bool start_time;
 
-    public float qTime = 59;
+    float qTime = 45;
     string qTimeString;
     public Text qTimeText;
 
@@ -55,9 +55,21 @@ public class Quiz : MonoBehaviour
     bool anim_start;
     bool anim_end;
 
+    int MaxQuestions;
+
     void Start()
     {
         max_rec = PlayerPrefs.GetInt("QuizMaxRecord");
+        if (PlayerPrefs.GetInt("QuizGameType") == 2)
+        {
+            MaxQuestions = 10;
+            qNoT.text = "ВОПРОС № 1/" + MaxQuestions;
+        }
+        else
+        {
+            MaxQuestions = 6;
+            qNoT.text = "ВОПРОС № 1/" + MaxQuestions;
+        }
     }
 
     void Update()
@@ -71,10 +83,10 @@ public class Quiz : MonoBehaviour
             if (qTime < 0)
             {
                 qNo += 1;
-                qNoT.text = "ВОПРОС №" + qNo.ToString() + "/20";
+                qNoT.text = "ВОПРОС №" + qNo.ToString() + "/" + MaxQuestions;
                 questiongenerate();
                 answer_choosed = false;
-                qTime = 59;
+                qTime = 45;
             }
 
 
@@ -145,11 +157,11 @@ public class Quiz : MonoBehaviour
         if (anim_end == true)
         {
             qNo += 1;
-            qNoT.text = "ВОПРОС №" + qNo.ToString() + "/20";
+            qNoT.text = "ВОПРОС №" + qNo.ToString() + "/" + MaxQuestions;
             if (answer == true) record = record + 1;
             qList.RemoveAt(randQ);
             answer_choosed = false;
-            qTime = 59;
+            qTime = 45;
             GameObject.Find("Answer (" + imNo.ToString() + ")").GetComponent<Animator>().SetTrigger("Normal");
             GameObject.Find("Answer (" + trueAnswer.ToString() + ")").GetComponent<Animator>().SetTrigger("Normal");
             btn_panel.SetActive(false);
@@ -191,7 +203,7 @@ public class Quiz : MonoBehaviour
 
     public void questiongenerate()
     {
-        if (qNo < 20)
+        if (qNo < MaxQuestions)
         {
             randQ = Random.Range(0, qList.Count);
             crntQ = qList[randQ] as Questionlist;
