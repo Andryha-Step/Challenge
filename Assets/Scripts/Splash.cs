@@ -17,7 +17,7 @@ public class Splash : MonoBehaviour
     void Update()
     {
         Splash_time = Splash_time + 1;
-        if (Splash_time > 400)
+        if (Splash_time > 200)
         {
             if (SavedPassword.Length == 6)
             {

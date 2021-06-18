@@ -85,6 +85,7 @@
     <Compile Include="Assets\Games\Snake(Game)\Scripts\DpadAxis.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\Snake.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\Dpad.cs" />
+    <Compile Include="Assets\Scripts\LetterSpacing.cs" />
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\CreditsController.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\Bonus.cs" />
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\MovementConfiguration.cs" />

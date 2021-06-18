@@ -13,13 +13,18 @@ public class TournamentTime : MonoBehaviour
     public Text leftTimeText;
     public int NowHour;
     public int NowMinute;
-    bool plus;
+    public int NowSec;
+    public bool plus;
 
     int HourLeft;
     int MinuteLeft;
+    int SecLeft;
+    
 
     void Start()
     {
+        var currentDate = System.DateTime.Now;
+
         id = PlayerPrefs.GetString("TimeID");
         if (id == "")
         {
@@ -28,6 +33,15 @@ public class TournamentTime : MonoBehaviour
         else
         {
             leftTime.SetActive(true) ;
+        }
+
+        if (PlayerPrefs.GetInt("Year") < Int32.Parse(currentDate.Year.ToString()) && PlayerPrefs.GetInt("Month") < Int32.Parse(currentDate.Month.ToString()) && PlayerPrefs.GetInt("Day") < Int32.Parse(currentDate.Day.ToString()))
+        {
+            leftTime.SetActive(false);
+        }
+        else
+        {
+            leftTime.SetActive(true);
         }
         
         if (PlayerPrefs.GetInt("PlusTimeBool") == 0)
@@ -59,7 +73,9 @@ public class TournamentTime : MonoBehaviour
         var currentDate = System.DateTime.Now;
         NowHour = Int32.Parse(currentDate.Hour.ToString());
         NowMinute = Int32.Parse(currentDate.Minute.ToString());
+        NowSec = Int32.Parse(currentDate.Second.ToString());
         MinuteLeft = 60 - NowMinute;
+        SecLeft = 60 - NowSec;
 
         if (plus == true)
         {
@@ -72,11 +88,25 @@ public class TournamentTime : MonoBehaviour
 
         if (MinuteLeft < 10)
         {
-            leftTimeText.text = HourLeft + ":0" + MinuteLeft;
+            if (SecLeft < 10)
+            {
+                leftTimeText.text = HourLeft + ":0" + MinuteLeft + ":0" + SecLeft;
+            }
+            else
+            {
+                leftTimeText.text = HourLeft + ":0" + MinuteLeft + ":" + SecLeft;
+            }
         }
         else
         {
-            leftTimeText.text = HourLeft + ":" + MinuteLeft;
+            if (SecLeft < 10)
+            {
+                leftTimeText.text = HourLeft + ":" + MinuteLeft + ":0" + SecLeft;
+            }
+            else
+            {
+                leftTimeText.text = HourLeft + ":" + MinuteLeft + ":" + SecLeft;
+            }
         }
 
         PlayerPrefs.SetString("TimeID", id);
@@ -93,6 +123,7 @@ public class TournamentTime : MonoBehaviour
         }
         else
         {
+            var currentDate = System.DateTime.Now;
             id = index.ToString();
             leftTime.SetActive(true);
             timeText[index].color = Color.black;
@@ -100,11 +131,17 @@ public class TournamentTime : MonoBehaviour
             {
                 plus = true;
                 PlayerPrefs.SetInt("PlusTimeBool", 1);
+                PlayerPrefs.SetInt("Day", Int32.Parse(currentDate.Day.ToString())+1);
+                PlayerPrefs.SetInt("Month", Int32.Parse(currentDate.Month.ToString()));
+                PlayerPrefs.SetInt("Year", Int32.Parse(currentDate.Year.ToString()));
             }
             else
             {
                 plus = false;
                 PlayerPrefs.SetInt("PlusTimeBool", 0);
+                PlayerPrefs.SetInt("Day", Int32.Parse(currentDate.Day.ToString()));
+                PlayerPrefs.SetInt("Month", Int32.Parse(currentDate.Month.ToString()));
+                PlayerPrefs.SetInt("Year", Int32.Parse(currentDate.Year.ToString()));
             }
         }
 

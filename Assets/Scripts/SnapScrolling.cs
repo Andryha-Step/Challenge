@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SnapScrolling : MonoBehaviour
 {
@@ -29,7 +30,12 @@ public class SnapScrolling : MonoBehaviour
 
     public bool start;
 
-    
+    public Text[] TourText = new Text[4];
+    public string[] CheTourText = new string[4];
+    public string[] OtherTourText = new string[4];
+    public Text startText;
+
+    int savePos;
 
     public void Start()
     {
@@ -45,21 +51,51 @@ public class SnapScrolling : MonoBehaviour
             instPans[i].transform.localPosition = new Vector2(instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x + panOffset, instPans[i].transform.localPosition.y);
             panPos[i] = -instPans[i].transform.localPosition;
         }
+        if (selectedPanID == 0)
+        {
+            startText.text = CheTourText[0];
+        }
+        else
+        {
+            startText.text = OtherTourText[0];
+        }
 
+        savePos = selectedPanID;
     }
 
     private void FixedUpdate()
     {
+        if (savePos != selectedPanID)
+        {
+            if (selectedPanID == 0)
+            {
+                startText.text = CheTourText[0];
+            }
+            else
+            {
+                startText.text = OtherTourText[0];
+            }
+            savePos = selectedPanID;
+        }
+
+
         if (selectedPanID == 0)
         {
             tournamentTime.SetActive(true);
+            for (int i = 0; i<4; i++)
+            {
+                TourText[i].text = CheTourText[i];
+            }
         }
         else
         {
             tournamentTime.SetActive(false);
+            for (int i = 0; i < 4; i++)
+            {
+                TourText[i].text = OtherTourText[i];
+            }
         }
         
-
         if (start == true)
         {
             if(PlayerPrefs.GetInt("PanID") == 1)
