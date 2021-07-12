@@ -11,13 +11,24 @@ public class Toggle_controll : MonoBehaviour
     public Sprite no_border;
     public Text title;
     public string game_name;
+    public bool cheeches = false;
 
     void Update()
     {
+        
+
         if (toggle.isOn == true)
         {
             Border.sprite = border;
             title.text = game_name;
+            if (cheeches == true)
+            {
+                Left_Right_anim.cheeches = true;
+            }
+            else
+            {
+                Left_Right_anim.cheeches = false;
+            }
         }
 
         if (toggle.isOn == false)

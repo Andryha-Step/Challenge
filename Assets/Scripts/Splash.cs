@@ -5,19 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Splash : MonoBehaviour
 {
-    int Splash_time = 0;
     public string SavedPassword;
+    float Splash_time = 4;
+
     void Start()
     {
         SavedPassword = PlayerPrefs.GetString("Password");
-        Splash_time = 0;
+        Splash_time = 4;
 
     }
 
     void Update()
     {
-        Splash_time = Splash_time + 1;
-        if (Splash_time > 200)
+        Splash_time = Splash_time - Time.deltaTime;
+        if (Splash_time < 0)
         {
             if (SavedPassword.Length == 6)
             {
