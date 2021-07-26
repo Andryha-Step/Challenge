@@ -2489,9 +2489,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1525620945354789635, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1832528734401026015, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -54.21518
+      value: -24.611725
       objectReference: {fileID: 0}
     - target: {fileID: 2017090564370319684, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2683,11 +2687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6832696932882453774, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 6832696932882453774, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5560799
       objectReference: {fileID: 0}
     - target: {fileID: 7346900735580939608, guid: 68cf0eb2009b88b45bb5474e10b6dd5e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4783,6 +4787,7 @@ MonoBehaviour:
   - "\u0422\u0443\u0440\u043D\u0438\u0440 \u043D\u0430 16 \u0447\u0435\u043B\u043E\u0432\u0435\u043A"
   - "\u0422\u0443\u0440\u043D\u0438\u0440 \u043D\u0430 20 \u0447\u0435\u043B\u043E\u0432\u0435\u043A"
   startText: {fileID: 1007479928}
+  info: {fileID: 1283519486}
 --- !u!114 &1391756638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7095,7 +7100,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 0
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1000
+  m_ScrollSensitivity: 10000
   m_Viewport: {fileID: 1812706255}
   m_HorizontalScrollbar: {fileID: 118726616}
   m_VerticalScrollbar: {fileID: 1519231185}

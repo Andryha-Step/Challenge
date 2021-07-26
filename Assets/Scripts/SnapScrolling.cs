@@ -34,8 +34,11 @@ public class SnapScrolling : MonoBehaviour
     public string[] CheTourText = new string[4];
     public string[] OtherTourText = new string[4];
     public Text startText;
+    public Text info;
 
     int savePos;
+
+    
 
     public void Start()
     {
@@ -65,6 +68,8 @@ public class SnapScrolling : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+
         if (savePos != selectedPanID)
         {
             if (selectedPanID == 0)
@@ -82,9 +87,26 @@ public class SnapScrolling : MonoBehaviour
         if (selectedPanID == 0)
         {
             tournamentTime.SetActive(true);
-            for (int i = 0; i<4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 TourText[i].text = CheTourText[i];
+            }
+
+            if (startText.text == "Турнир на 4 человека")
+            {
+                info.text = "Стоимость билета: 6500₽\n\nКол - во призовых мест: 1\n\nПриз: Сертификаты на 20 000₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 6 человек")
+            {
+                info.text = "Стоимость билета: 2166₽\n\nКол - во призовых мест: 2\n\nПриз: Сертификаты на 10 000₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 8 человек")
+            {
+                info.text = "Стоимость билета: 650₽\n\nКол - во призовых мест: 3\n\nПриз: Сертификаты на 4000₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 12 человек")
+            {
+                info.text = "Стоимость билета: 108₽\n\nКол - во призовых мест: 4\n\nПриз: Сертификаты на 1000₽\n\n†";
             }
         }
         else
@@ -93,6 +115,22 @@ public class SnapScrolling : MonoBehaviour
             for (int i = 0; i < 4; i++)
             {
                 TourText[i].text = OtherTourText[i];
+            }
+            if (startText.text == "Турнир на 6 человек")
+            {
+                info.text = "Стоимость билета: 6500₽\n\nКол - во призовых мест: 2\n\nПриз: Сертификаты на 25 000₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 10 человек")
+            {
+                info.text = "Стоимость билета: 1300₽\n\nКол - во призовых мест: 3\n\nПриз: Сертификаты на 8500₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 16 человек")
+            {
+                info.text = "Стоимость билета: 325₽\n\nКол - во призовых мест: 3\n\nПриз: Сертификаты на 3500₽\n\n†";
+            }
+            else if (startText.text == "Турнир на 20 человек")
+            {
+                info.text = "Стоимость билета: 65₽\n\nКол - во призовых мест: 4\n\nПриз: Сертификаты на 700₽\n\n†";
             }
         }
         
