@@ -203,7 +203,7 @@ public class Quiz : MonoBehaviour
 
     public void questiongenerate()
     {
-        if (qNo < MaxQuestions)
+        if (qNo <= MaxQuestions)
         {
             randQ = Random.Range(0, qList.Count);
             crntQ = qList[randQ] as Questionlist;

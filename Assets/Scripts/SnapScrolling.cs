@@ -94,7 +94,7 @@ public class SnapScrolling : MonoBehaviour
 
             if (startText.text == "Турнир на 4 человека")
             {
-                info.text = "Стоимость билета: 6500₽\n\nКол - во призовых мест: 1\n\nПриз: Сертификаты на 20 000₽\n\n†";
+                info.text = "Стоимость билета: 6500₽\n\nКол - во призовых мест: 1\n\nПриз: Сертификаты на 15 000₽\n\n†";
             }
             else if (startText.text == "Турнир на 6 человек")
             {
@@ -106,7 +106,7 @@ public class SnapScrolling : MonoBehaviour
             }
             else if (startText.text == "Турнир на 12 человек")
             {
-                info.text = "Стоимость билета: 108₽\n\nКол - во призовых мест: 4\n\nПриз: Сертификаты на 1000₽\n\n†";
+                info.text = "Стоимость билета: 108₽\n\nКол - во призовых мест: 3\n\nПриз: Сертификаты на 1000₽\n\n†";
             }
         }
         else

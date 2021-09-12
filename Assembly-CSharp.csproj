@@ -120,6 +120,7 @@
     <Compile Include="Assets\Games\Snake(Game)\Scripts\JoystickInputHelper.cs" />
     <Compile Include="Assets\Scripts\TournamentTime.cs" />
     <Compile Include="Assets\Scripts\Sertificate_choose.cs" />
+    <Compile Include="Assets\Scripts\Rules.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

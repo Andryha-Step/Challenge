@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - Quiz
     - Quiz_records
     - Records
+    - Rules
     - Scrolls
     - Sertificate_choose
     - Snake
@@ -44,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -59,8 +61,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -164,7 +168,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1470}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1472}
     - Class: 114
       Script: {instanceID: 2526}
     - Class: 114
@@ -176,9 +180,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2908}
     - Class: 114
+      Script: {instanceID: 3084}
+    - Class: 114
       Script: {instanceID: 3182}
     - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
+      Script: {instanceID: 4084}
+    - Class: 114
       Script: {instanceID: 4902}
+    - Class: 114
+      Script: {instanceID: 50824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -701,7 +713,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5126}
     - Class: 114
-      Script: {instanceID: 31280}
+      Script: {instanceID: 61736}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2069,6 +2081,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sertificate_choose
+  - hash:
+      serializedVersion: 2
+      Hash: e5106c722ba68becf30815e3ca7488d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rules
   platform: 13
   scenePathNames:
   - Assets/Scenes/00_Splash.unity
