@@ -94,6 +94,7 @@
     <Compile Include="Assets\Games\Checkers (Game)\Scripts\Piece\PlayerManPiece.cs" />
     <Compile Include="Assets\Games\Snake(Game)\Scripts\TouchpadInputHelper.cs" />
     <Compile Include="Assets\Scripts\Left_Right_anim.cs" />
+    <Compile Include="Assets\Scripts\Rules.cs" />
     <Compile Include="Assets\Scripts\Alert_close.cs" />
     <Compile Include="Assets\Scripts\Toggle_controll.cs" />
     <Compile Include="Assets\Scripts\Scrolls.cs" />
@@ -120,7 +121,6 @@
     <Compile Include="Assets\Games\Snake(Game)\Scripts\JoystickInputHelper.cs" />
     <Compile Include="Assets\Scripts\TournamentTime.cs" />
     <Compile Include="Assets\Scripts\Sertificate_choose.cs" />
-    <Compile Include="Assets\Scripts\Rules.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
